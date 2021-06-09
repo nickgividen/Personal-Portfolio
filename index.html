@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+    />
+
+    <title>Nick Gividen</title>
+  </head>
+  <body>
+    <nav>
+      <h3 class="logo__placeholder">logo</h3>
+      <div class="nav-links__container" id="links">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Services</a>
+        <a href="#" class="nav-link">Portfolio</a>
+        <a href="#" class="nav-link">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="hamburger" onclick="showMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero__text__container">
+        <h1 class="hero__title">Nick Gividen</h1>
+        <p class="hero__text">Shopify Expert | Web Developer</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="content__container content__container--about">
+        <img class="headshot" src="/assets/headshot.jpeg" alt="headshot" />
+        <div class="about__text">
+          <h2>Hello!</h2>
+          <p>
+            My name is Nick Gividen. I am a Shopify Expert and web developer
+            based in Houston TX.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="content__container">
+        <h2 class="services__heading">Services</h2>
+        <ul class="services__container">
+          <li class="service">
+            <h3 class="service__title">Store setup</h3>
+            <i class="fas fa-store-alt icon"></i>
+            <p class="service__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+              aspernatur ullam eveniet fugiat sunt. Dolor totam cum harum
+              maiores nostrum cumque quas quidem? Quod doloremque perferendis
+              error cum dolore aliquid.
+            </p>
+          </li>
+          <li class="service">
+            <h3 class="service__title">Theme Customization</h3>
+            <i class="fas fa-tools icon"></i>
+            <p class="service__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              reiciendis nemo ipsa repellat. Delectus esse iure aliquam error
+              non, quos, sunt explicabo aperiam, nemo ut qui iste quidem
+              reprehenderit laudantium.
+            </p>
+          </li>
+          <li class="service">
+            <h3 class="service__title">Site Migration</h3>
+            <i class="fas fa-people-carry icon"></i>
+            <p class="service__description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
+              quis consectetur ab saepe cupiditate culpa hic dolores consequatur
+              temporibus praesentium ullam iste maxime similique ducimus
+              sapiente pariatur expedita ipsa. Dolor?
+            </p>
+          </li>
+          <li class="service">
+            <h3 class="service__title">Affiliate Links</h3>
+            <i class="fab fa-amazon icon"></i>
+            <p class="service__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              corrupti magnam sint provident debitis, illum aperiam, sequi
+              cupiditate iste quos itaque repellat. Distinctio cum nam, a
+              deserunt voluptatibus aliquam consequuntur!
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="content__container">
+        <h2>Portfolio</h2>
+        <div class="project">project 1</div>
+        <div class="project">project 2</div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="content__container">
+        <h2>contact</h2>
+        <div class="form__container">
+          <form class="contact__form" action="contactform.php" method="POST">
+            <input
+              class="form__info"
+              type="text"
+              name="name"
+              placeholder="Full name"
+            />
+            <input
+              class="form__info"
+              type="text"
+              name="mail"
+              placeholder="Your e-mail"
+            />
+            <input
+              class="form__info"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+            />
+            <textarea
+              class="form__info"
+              name="message"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" name="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
