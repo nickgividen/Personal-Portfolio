@@ -12,24 +12,32 @@
 
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     />
 
     <title>Nick Gividen</title>
   </head>
   <body>
     <nav>
-      <h3 class="logo__placeholder">logo</h3>
-      <div class="nav-links__container" id="links">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Services</a>
-        <a href="#" class="nav-link">Portfolio</a>
-        <a href="#" class="nav-link">Contact</a>
+      <h3 class="logo__placeholder">NG</h3>
+      <div class="nav-links__container hidden" id="links">
+        <div class="nav-link__wrapper">
+          <a href="#" class="nav-link">Home</a>
+        </div>
+        <div class="nav-link__wrapper">
+          <a href="#" class="nav-link">About</a>
+        </div>
+        <div class="nav-link__wrapper">
+          <a href="#" class="nav-link">Services</a>
+        </div>
+        <div class="nav-link__wrapper">
+          <a href="#" class="nav-link">Portfolio</a>
+        </div>
+        <div class="nav-link__wrapper">
+          <a href="#" class="nav-link">Contact</a>
+        </div>
       </div>
-      <a href="javascript:void(0);" class="hamburger" onclick="showMenu()">
-        <i class="fa fa-bars"></i>
-      </a>
+      <i class="fa fa-bars" id="hamburger"></i>
     </nav>
 
     <section class="hero">
@@ -40,10 +48,18 @@
     </section>
 
     <section class="about">
-      <div class="content__container content__container--about">
-        <img class="headshot" src="/assets/headshot.jpeg" alt="headshot" />
+      <div
+        class="content__container content__container--about"
+        id="about-section"
+      >
+        <img
+          class="headshot"
+          src="/assets/headshot.jpeg"
+          alt="headshot"
+          id="me"
+        />
         <div class="about__text">
-          <h2>Hello!</h2>
+          <h2>About Me</h2>
           <p>
             My name is Nick Gividen. I am a Shopify Expert and web developer
             based in Houston TX.
@@ -54,11 +70,14 @@
 
     <section class="services">
       <div class="content__container">
-        <h2 class="services__heading">Services</h2>
+        <h2 class="services__heading section__heading">Services</h2>
+
         <ul class="services__container">
           <li class="service">
             <h3 class="service__title">Store setup</h3>
-            <i class="fas fa-store-alt icon"></i>
+            <div class="icon__container">
+              <i class="fab fa-shopify icon"></i>
+            </div>
             <p class="service__description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
               aspernatur ullam eveniet fugiat sunt. Dolor totam cum harum
@@ -66,9 +85,12 @@
               error cum dolore aliquid.
             </p>
           </li>
+
           <li class="service">
             <h3 class="service__title">Theme Customization</h3>
-            <i class="fas fa-tools icon"></i>
+            <div class="icon__container">
+              <i class="fas fa-tools icon"></i>
+            </div>
             <p class="service__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
               reiciendis nemo ipsa repellat. Delectus esse iure aliquam error
@@ -76,9 +98,12 @@
               reprehenderit laudantium.
             </p>
           </li>
+
           <li class="service">
             <h3 class="service__title">Site Migration</h3>
-            <i class="fas fa-people-carry icon"></i>
+            <div class="icon__container">
+              <i class="fas fa-people-carry icon"></i>
+            </div>
             <p class="service__description">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
               quis consectetur ab saepe cupiditate culpa hic dolores consequatur
@@ -86,9 +111,12 @@
               sapiente pariatur expedita ipsa. Dolor?
             </p>
           </li>
+
           <li class="service">
             <h3 class="service__title">Affiliate Links</h3>
-            <i class="fab fa-amazon icon"></i>
+            <div class="icon__container">
+              <i class="fab fa-amazon icon"></i>
+            </div>
             <p class="service__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
               corrupti magnam sint provident debitis, illum aperiam, sequi
@@ -102,25 +130,77 @@
 
     <section class="portfolio">
       <div class="content__container">
-        <h2>Portfolio</h2>
-        <div class="project">project 1</div>
-        <div class="project">project 2</div>
+        <h2 class="section__heading">Portfolio</h2>
+
+        <div class="project__container">
+          <a href="#" class="project">
+            <img
+              class="project__image"
+              src="/assets/wm-photo-small.jpeg"
+              alt="shopify clothing store"
+            />
+            <div class="project__text">
+              <h3 class="project__name">Wise Maker</h3>
+              <p class="project__description">Shopify store</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project__container">
+          <a href="#" class="project">
+            <img
+              class="project__image"
+              src="/assets/cp-photo-small.jpeg"
+              alt="shopify store"
+            />
+            <div class="project__text">
+              <h3 class="project__name">Cosmic Pod</h3>
+              <p class="project__description">Shopify Store</p>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="contact">
       <div class="content__container">
-        <h2>contact</h2>
+        <h2 class="section__heading">Contact</h2>
+        <div class="contact__hero">
+          <h3 class="contact__content">Let's talk about your project</h3>
+
+          <i class="far fa-comments"></i>
+        </div>
+        <div class="form__container">
+          <form
+            action="https://getform.io/f/8acdfa60-20c2-4be7-b0e4-aa22a6d05b70"
+            method="POST"
+          >
+            <input
+              class="form__name"
+              type="text"
+              name="name"
+              placeholder="name"
+            />
+            <input
+              class="form__email"
+              type="email"
+              name="email"
+              placeholder="email"
+            />
+            <textarea
+              class="form__message"
+              type="text"
+              name="message"
+              placeholder="message"
+              rows="5"
+            ></textarea>
+
+            <button class="submit__btn btn" type="submit">
+              Send <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
       </div>
-      <form
-        action="https://getform.io/f/8acdfa60-20c2-4be7-b0e4-aa22a6d05b70"
-        method="POST"
-      >
-        <input type="text" name="name" placeholder="name" />
-        <input type="email" name="email" placeholder="email" />
-        <input type="text" name="message" placeholder="message" />
-        <button type="submit">Send</button>
-      </form>
     </section>
   </body>
   <script src="index.js"></script>
