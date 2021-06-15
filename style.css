@@ -8,10 +8,11 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #f8f5f2;
 }
 
 section {
-  padding: 4rem;
+  padding: 4rem 0;
 }
 
 li {
@@ -43,7 +44,7 @@ h4 {
 }
 
 .content__container {
-  max-width: 75%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 3rem 0;
 }
@@ -64,12 +65,12 @@ h4 {
   font-size: 1.75rem;
   font-weight: 200;
   letter-spacing: 0.15em;
-  z-index: 999;
 }
 
 .logo__link {
   text-decoration: none;
   color: #f2f7f5;
+  z-index: 999;
 }
 
 nav {
@@ -82,7 +83,7 @@ nav {
   width: 100%;
   background-color: #232323;
   opacity: 0.99;
-  z-index: 998;
+  z-index: 100;
 }
 
 .nav-links__container {
@@ -497,4 +498,19 @@ nav {
   .service {
     max-width: 45%;
   }
+}
+
+/* Shopify Store Demo Pages */
+
+.store__demo--content {
+  padding-top: 6rem;
+}
+
+.store__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feature__container {
+  margin: 0 auto;
 }
