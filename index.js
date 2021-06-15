@@ -21,8 +21,8 @@ let sections = document.querySelectorAll(".content__container");
 window.onscroll = function fadeIn() {
   sections.forEach((section) => {
     let sectionSize = section.getBoundingClientRect();
-    let topPart = sectionSize.top;
-    if (window.scrollY > topPart) {
+    let bottomPart = sectionSize.bottom;
+    if (window.scrollY > bottomPart - 500) {
       section.style.opacity = "1";
       section.style.transform = "translateX(0)";
       section.style.transition = "600ms ease-in-out";
