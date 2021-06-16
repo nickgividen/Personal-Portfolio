@@ -504,6 +504,13 @@ nav {
 
 .store__demo--content {
   padding-top: 6rem;
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.store__demo--content hr {
+  margin: 4rem 4rem;
 }
 
 .store__header {
@@ -513,4 +520,16 @@ nav {
 
 .feature__container {
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature__description {
+  margin: 1em 0;
+}
+
+.feature__container img {
+  min-width: 300px;
+  border-radius: 8px;
+  border: 1px solid rgba(190, 188, 188, 0.384);
 }
