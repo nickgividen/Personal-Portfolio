@@ -234,6 +234,12 @@ nav {
   text-align: center;
 }
 
+.intro-video {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 /* Services */
 .services {
   background-color: #fffffe;
